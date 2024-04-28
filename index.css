@@ -13,6 +13,10 @@
     font-weight: 700;
     font-size: 500%;
 
+    user-select: none;
+
+    padding-top: 2%;
+
     animation-duration: 2s;
     animation-name: Intro-Title;
     animation-fill-mode: forwards;
@@ -25,4 +29,51 @@
     to{
         letter-spacing: 50px;
     }
+}
+
+.title-separator {
+    border-top: 3px solid #bbb;
+    border-radius: 50%;
+
+    animation-timing-function:cubic-bezier(.61,.24,.95,.22);
+    animation-fill-mode: forwards;
+    animation-duration: 1.5s    ;
+    animation-name: Intro-title-seperator;
+}
+
+@keyframes Intro-title-seperator {
+    from{
+        margin-top: 3%;
+    }
+    to {
+        margin-top: -3%;
+    }
+}
+
+.menubar {
+    margin: auto;
+    width: 0%;
+    padding-left: 40%;
+
+}
+
+#GitHub  {
+    
+    color: rgb(255, 210, 210);
+    text-align: center;
+    font-family: "Comfortaa", sans-serif;
+    font-weight: 500;
+    text-align: right;
+
+    user-select: none;
+
+    text-decoration:overline ;
+
+    transition: color 0.3s;
+}
+
+#GitHub:hover {
+
+    cursor: pointer;
+    color: rgb(255, 150, 150);
 }
